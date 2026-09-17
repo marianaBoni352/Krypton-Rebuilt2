@@ -90,11 +90,11 @@ public class Robot extends TimedRobot {
         kIntakeRackMotor.stopMotor();
     }
         if (p1Controller.getAButton()) {
-        kIntakeRackMotor.set(kIntakeSpeed);
+        kIntakeRollerMotor.set(kIntakeSpeed);
     } else if (p1Controller.getBButton()) {
-        kIntakeRackMotor.set(-kIntakeSpeed);
+        kIntakeRollerMotor.set(-kIntakeSpeed);
     }  else {
-        kIntakeRackMotor.stopMotor();
+        kIntakeRollerMotor.stopMotor();
     }
   } 
   @Override
